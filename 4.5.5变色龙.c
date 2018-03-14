@@ -13,13 +13,13 @@ void main1()
         int i;
         for(i=0;i<16;i++)
         {
-            sprintf(str,"color %x%x",i,15-i);//´òÓ¡×Ö·û´®
-            system(str);//Ö´ÐÐÖ¸Áî£¬¸Ä±äÑÕÉ«
-            printf("\n%s",str);//´òÓ¡×Ö·û´®
+            sprintf(str,"color %x%x",i,15-i);//æ‰“å°å­—ç¬¦ä¸²
+            system(str);//æ‰§è¡ŒæŒ‡ä»¤ï¼Œæ”¹å˜é¢œè‰²
+            printf("\n%s",str);//æ‰“å°å­—ç¬¦ä¸²
 
-            sprintf(strl,"title Æô¶¯%d s",j);
+            sprintf(strl,"title å¯åŠ¨%d s",j);
             j++;
-            system(strl);//¸Ä±ä±êÌâ
+            system(strl);//æ”¹å˜æ ‡é¢˜
             Sleep(1000);
         }
     }
@@ -36,13 +36,13 @@ void main()
         int i=0;
         while(i<16)
         {
-            sprintf(str,"color %x%x",i,15-i);//´òÓ¡×Ö·û´®
-            system(str);//Ö´ÐÐÖ¸Áî£¬¸Ä±äÑÕÉ«
-            printf("\n%s",str);//´òÓ¡×Ö·û´®
+            sprintf(str,"color %x%x",i,15-i);//æ‰“å°å­—ç¬¦ä¸²
+            system(str);//æ‰§è¡ŒæŒ‡ä»¤ï¼Œæ”¹å˜é¢œè‰²
+            printf("\n%s",str);//æ‰“å°å­—ç¬¦ä¸²
 
-            sprintf(strl,"title Æô¶¯%d s",j);
+            sprintf(strl,"title å¯åŠ¨%d s",j);
             j++;
-            system(strl);//¸Ä±ä±êÌâ
+            system(strl);//æ”¹å˜æ ‡é¢˜
             Sleep(1000);
             i++;
         }

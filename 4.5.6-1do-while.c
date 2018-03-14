@@ -23,7 +23,7 @@ void main()
 		{
 			ch+=32;
 		}
-		putchar(ch);//Êä³öÒ»¸ö×Ö·û 
-		getchar();//»º³å»Ø³µ 
+		putchar(ch);//è¾“å‡ºä¸€ä¸ªå­—ç¬¦ 
+		getchar();//ç¼“å†²å›žè½¦ 
 	}while(ch!='\t') ;
 }

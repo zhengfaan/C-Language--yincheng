@@ -1,4 +1,4 @@
-#include<stdio.h>
+ï»¿#include<stdio.h>
 #include<stdlib.h>
 #include<Windows.h>
 
@@ -9,11 +9,11 @@ void openQQ()
 
 void moveQQ()
 {
-	HWND win = FindWindowA("TXGuiFoundation", "QQ");//»ñÈ¡´°¿Ú±àºÅ HWND²é´°¿Ú±àºÅ
-													//FindWindowAÑ°ÕÒ´°¿Ú,¸ù¾İÀàÃû,±êÌâ,¿ÉÒÔÓÃMy SpyÈí¼ş»ñÈ¡
+	HWND win = FindWindowA("TXGuiFoundation", "QQ");//è·å–çª—å£ç¼–å· HWNDæŸ¥çª—å£ç¼–å·
+													//FindWindowAå¯»æ‰¾çª—å£,æ ¹æ®ç±»å,æ ‡é¢˜,å¯ä»¥ç”¨My Spyè½¯ä»¶è·å–
 	if (win == NULL)
 	{
-		printf("Î´Æô¶¯QQ");
+		printf("æœªå¯åŠ¨QQ");
 	}
 	int x,y;
 	x=1300;
@@ -21,7 +21,7 @@ void moveQQ()
 	do
 	{
 		SetWindowPos(win, NULL, x, y, 700, 700, 0);
-		//ÉèÖÃ´°¿Ú´óĞ¡ÒÔ¼°´°¿ÚÎ»ÖÃ
+		//è®¾ç½®çª—å£å¤§å°ä»¥åŠçª—å£ä½ç½®
 		x=x-10;
 		y+=5;
 		if(x/10%2==1)
@@ -34,7 +34,7 @@ void moveQQ()
 		}
 		Sleep(100);
 		 
-	}while(x);//µ±xÎª0Ê±ÖÕÖ¹ 
+	}while(x);//å½“xä¸º0æ—¶ç»ˆæ­¢ 
 	
 }
 
@@ -47,7 +47,7 @@ void main()
 {
 	system("taskkill /f /im QQ.exe");
 	openQQ();
-	Sleep(2000);//µÈ´ı400ms
+	Sleep(2000);//ç­‰å¾…400ms
 	moveQQ();
 	Sleep(2000);
 	//closeQQ();
